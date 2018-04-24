@@ -12,3 +12,14 @@ it('initial `state` should be eq to []', () =>{
   expect(app.state().gifts).toEqual([]);
 });
 
+it('adds gift to `state` when add btn is click', () => {
+  app.find('.btn-add').simulate('click');
+
+  expect(app.state().gifts).toEqual([{ id: 1 }]);
+});
+
+it('adds new gift to list on click', () => {
+  app.find('.btn-add').simulate('click');
+
+  expect(app.find('.gift-list').children().length).toEqual(1);
+})
