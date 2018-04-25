@@ -7,25 +7,31 @@ class Gift extends Component {
     this.state = { person: '', present: '' };
   }
 
+  renderInput = (field) => {
+    const className = `input-${field.toLowerCase()}`
+      return(
+      <FormGroup key={field}>
+        <ControlLabel>{ field }</ControlLabel>
+        <FormControl 
+          className={ className }
+          onChange={ event => this.onInputChange(event, field) } 
+        />
+      </FormGroup>
+      );
+   }
+
+   onInputChange = (event, fieldName) => {
+     const field = fieldName.toLowerCase()
+     this.setState({[ field ]: event.target.value })
+   }
+
 
   render() {
+    const fieldList = ['Person', 'Present'];
     return (
       <div>
         <Form>
-          <FormGroup>
-            <ControlLabel>Person</ControlLabel>
-            <FormControl 
-              className="input-person"
-              onChange={ event => this.setState( { person: event.target.value }) } 
-            />
-          </FormGroup>
-          <FormGroup>
-            <ControlLabel>Present</ControlLabel>
-            <FormControl 
-              className="input-present"
-              onChange={ event => this.setState( { present: event.target.value }) }
-            />
-          </FormGroup>
+          { fieldList.map(this.renderInput) }
         </Form>
         <Button
         className="btn-remove"
@@ -35,7 +41,7 @@ class Gift extends Component {
         </Button>
       </div>
     );
-  }
+  };
 }
 
 export default Gift;
