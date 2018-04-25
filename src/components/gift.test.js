@@ -5,7 +5,7 @@ import Gift from './gift';
 describe('Gift', () => {
   const mockRemove = jest.fn();
   const id = 1;
-  const props = { gift: { id }, removeGift: mockRemove }
+  const props = { obj: { id }, removeGift: mockRemove }
   const gift = shallow(<Gift { ...props } />);
 
   it('should render properly', () => {

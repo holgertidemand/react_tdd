@@ -16,14 +16,14 @@ class App extends Component {
     const ids = gifts.map(gift => gift.id);
     const maxId = gifts.length > 0 ? Math.max(...ids) : 0;
 
-    this.setState({ 
+    return this.setState({ 
       gifts: [ ...gifts, { id: maxId+1 } ]
     });
   }
 
 removeGift(id){
   const gifts = this.state.gifts.filter(gift => gift.id !== id);
-  this.setState({ gifts });
+  return this.setState({ gifts });
 }
 
 
@@ -36,7 +36,7 @@ removeGift(id){
                 return (
                   <Gift 
                     key={ gift.id }
-                    gift={ gift }
+                    obj={ gift }
                     removeGift={ this.removeGift }
                   />
                 );

@@ -5,7 +5,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Gift
-    gift={
+    obj={
         Object {
             "id": 1,
           }
@@ -71,8 +71,10 @@ ShallowWrapper {
           bsStyle="default"
           className="btn-remove"
           disabled={false}
-          onClick={undefined}
-/>,
+          onClick={[Function]}
+>
+          Remove Gift
+</Button>,
       ],
     },
     "ref": null,
@@ -241,12 +243,13 @@ ShallowWrapper {
           "block": false,
           "bsClass": "btn",
           "bsStyle": "default",
+          "children": "Remove Gift",
           "className": "btn-remove",
           "disabled": false,
-          "onClick": undefined,
+          "onClick": [Function],
         },
         "ref": null,
-        "rendered": null,
+        "rendered": "Remove Gift",
         "type": [Function],
       },
     ],
@@ -305,8 +308,10 @@ ShallowWrapper {
             bsStyle="default"
             className="btn-remove"
             disabled={false}
-            onClick={undefined}
-/>,
+            onClick={[Function]}
+>
+            Remove Gift
+</Button>,
         ],
       },
       "ref": null,
@@ -475,12 +480,13 @@ ShallowWrapper {
             "block": false,
             "bsClass": "btn",
             "bsStyle": "default",
+            "children": "Remove Gift",
             "className": "btn-remove",
             "disabled": false,
-            "onClick": undefined,
+            "onClick": [Function],
           },
           "ref": null,
-          "rendered": null,
+          "rendered": "Remove Gift",
           "type": [Function],
         },
       ],
