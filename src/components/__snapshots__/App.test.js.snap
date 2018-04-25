@@ -24,7 +24,7 @@ ShallowWrapper {
         <div
           className="gift-list"
 >
-          [Function]
+          
 </div>,
         <Button
           active={false}
@@ -57,11 +57,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": [Function],
+          "children": Array [],
           "className": "gift-list",
         },
         "ref": null,
-        "rendered": [Function],
+        "rendered": Array [],
         "type": "div",
       },
       Object {
@@ -98,7 +98,7 @@ ShallowWrapper {
           <div
             className="gift-list"
 >
-            [Function]
+            
 </div>,
           <Button
             active={false}
@@ -131,11 +131,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": [Function],
+            "children": Array [],
             "className": "gift-list",
           },
           "ref": null,
-          "rendered": [Function],
+          "rendered": Array [],
           "type": "div",
         },
         Object {
